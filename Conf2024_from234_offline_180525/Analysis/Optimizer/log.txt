@@ -1,0 +1,68 @@
+##################Start of minimizer###################
+##################End of minimizer#####################
+##################Scan of PRISMA_CONF of TOF_OFFSET
+=============== it: 0 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 0
+COST -nan
+FITTED MEAN 882.534
+FITTED SIGMA 1.65002
+=============== it: 1 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: -1e-08
+COST -nan
+FITTED MEAN 885.096
+FITTED SIGMA 1.65
+=============== it: 2 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 0
+COST -nan
+FITTED MEAN 882.534
+FITTED SIGMA 1.65002
+=============== it: 3 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 1e-08
+COST -nan
+FITTED MEAN 880.29
+FITTED SIGMA 1.65
+=============== it: 4 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2e-08
+COST -nan
+FITTED MEAN 878.241
+FITTED SIGMA 1.65
+=============== it: 5 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 3e-08
+COST -nan
+FITTED MEAN 876.395
+FITTED SIGMA 1.65
+=============== it: 6 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 4e-08
+COST -nan
+FITTED MEAN 874.725
+FITTED SIGMA 1.65001
+=============== it: 7 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 5e-08
+COST -nan
+FITTED MEAN 874.794
+FITTED SIGMA 13.8405
+=============== it: 8 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 6e-08
+COST -nan
+FITTED MEAN 871.789
+FITTED SIGMA 1.65003
+=============== it: 9 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 7e-08
+COST -nan
+FITTED MEAN 870.501
+FITTED SIGMA 1.65007
+=============== it: 10 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 8e-08
+COST -nan
+FITTED MEAN 869.315
+FITTED SIGMA 1.65003
+=============== it: 11 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 9e-08
+COST -nan
+FITTED MEAN 868.221
+FITTED SIGMA 1.65001
+=============== it: 12 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 1e-07
+COST -nan
+FITTED MEAN 867.213
+FITTED SIGMA 1.65003

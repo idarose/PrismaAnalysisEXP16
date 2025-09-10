@@ -1,0 +1,13 @@
+#Calibration file
+#side_A
+id 0 0  cal 0 1 thr 160. 3500.
+id 0 1  cal 0 1 thr 170. 3500.
+#side_B
+id 1 0  cal 0 1 thr 160. 3500.
+id 1 1  cal 0 1 thr 160. 3500.
+#side_C
+id 2 0  cal 0 1 thr 160. 3500.
+id 2 1  cal 0 1 thr 160. 3500.
+#side_D
+id 3 0  cal 0 1 thr 160. 3500.
+id 3 1  cal 0 1 thr 160. 3500.

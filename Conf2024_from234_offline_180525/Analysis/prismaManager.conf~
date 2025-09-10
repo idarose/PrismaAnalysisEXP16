@@ -1,0 +1,48 @@
+#raw calibrations
+MCP_CAL            	   /CALIBRATION/PRISMA/RAW/mcp.cal
+MCPROT_CAL         	   /CALIBRATION/PRISMA/RAW/mcprot.cal
+PPACPOS_CAL        	   /CALIBRATION/PRISMA/RAW/ppac_pos_cal.cal
+ICE_CAL            	   /CALIBRATION/PRISMA/RAW/ice.cal
+ICSIDES_CAL        	   /CALIBRATION/PRISMA/RAW/icsides.cal
+ICDRIFT_CAL        	   /CALIBRATION/PRISMA/RAW/icdrift.cal
+TOF_CAL            	   /CALIBRATION/PRISMA/RAW/tof.cal
+MONITOR_CAL        	   /CALIBRATION/PRISMA/RAW/monitor.cal
+
+#raw thresholds
+PPAC_THRESH        	   /CALIBRATION/PRISMA/RAW/ppac_thresh.cal
+
+#raw gates
+MCP_GATE		   /CUT/PRISMA/RAW/MCP
+PPAC_GATE          	   /CUT/PRISMA/RAW/PPAC
+
+#analyzed calibrations
+AOQ_CAL            	   /CALIBRATION/PRISMA/ANA/aoverq_empty.cal
+CHARGE_CAL         	   /CALIBRATION/PRISMA/ANA/charge_empty.cal
+ICE_CORR           	   /CALIBRATION/PRISMA/ANA/icecorr_empty.cal
+
+#analyzed gates
+TOF_GATE		 /CUT/PRISMA/ANA/TOF       	   
+Q_GATE             	 /CUT/PRISMA/ANA/CHARGE  
+Z_GATE             	 /CUT/PRISMA/ANA/ZED  
+A_GATE			 /CUT/PRISMA/ANA/MASS
+#VALID_Q            	   
+#Z_LINES            	   
+#Q_LINES            	   
+#Z_MASS_LINES       	   
+
+#corrections
+#AOQTIME_CORR       	   
+AOQXMCP_CORR       	   /CUT/PRISMA/ANA/AOVERQ_XMCP_empty
+AOQYMCP_CORR       	   /CUT/PRISMA/ANA/AOVERQ_YMCP_empty
+AOQXFP_CORR        	   /CUT/PRISMA/ANA/AOVERQ_XFP_empty
+ICDEABXFP_CORR      	   /CUT/PRISMA/ANA/ICDEABXFP
+ICDEABYFP_CORR      	   /CUT/PRISMA/ANA/ICDEABYFP
+#ICECORR_XFP        	   
+#ICECORR_YFP        	   
+#ICENM_BETA         	   
+#ICENM_BETA_ZED     	   
+
+#boh
+#XMCP_LENGTH        	   
+#LENGTH_RECAL       	   
+#THETA_CM_LIMITS    	   

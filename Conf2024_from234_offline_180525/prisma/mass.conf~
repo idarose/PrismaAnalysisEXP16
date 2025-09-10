@@ -1,0 +1,46 @@
+z_min = 26
+z_max = 31
+
+q_min = 20
+q_max = 30
+
+a_min = 56
+a_max = 76
+
+ban_file_base = ban/charge_ban_
+mas_file_base = ban/mas_ban_
+mass_number_from_banana = 0
+
+ban_res_x = 10000
+ban_res_y = 10000
+
+
+cal_file = cal/a_over_q.cal
+
+xmc_file = cal/xmcempty.cal
+xmc_spli = cal/xmc.spli
+xmc_uspl = 1
+
+ymc_file = cal/ymcempty.cal
+ymc_spli = cal/ymc.spli
+ymc_uspl = 1
+
+xfp_file = cal/xfp.cal
+xfp_spli = cal/xfp.spli
+xfp_uspl = 0
+
+chg_file_base = cal/charge_cal_
+
+#aberrations stuff
+xmc_gain = 1.0
+xmc_offs = 0.0
+ymc_gain = 1.0
+ymc_offs = 0.0
+
+xfp_gain = 1.0
+xfp_offs = 0.0
+
+r_fact = 1.0
+e_fact = 1.0
+
+B_dipole = 0.710727

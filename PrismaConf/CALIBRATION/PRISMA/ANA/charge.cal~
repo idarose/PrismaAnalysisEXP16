@@ -1,0 +1,7 @@
+#Calibration file
+#id 0 0  cal 0 1 thr 0 4096
+id	28 20 	cal 20.3529 	 0. 	 
+id	28 21 	cal 21.3696 	 0. 	 
+id	28 22 	cal 22.0434 	 0. 	 
+id	28 23 	cal 23.0354 	 0. 	 
+id	28 24 	cal 23.6655 	 0. 	 
