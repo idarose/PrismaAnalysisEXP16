@@ -1,0 +1,9 @@
+#99 0 4 1.0012 -4.0902e-06 -4.06083e-06 -7.37353e-09  
+#99 0 2 1.0 0  
+#99 0 4 1.00003 -4.99473e-06 -4.1344e-06 -1.48356e-08
+#Marco: 2 different lines: using line1 parameters (Xe cut)
+#99 0 4 1.0 -7.77082e-06 -4.04107e-06 8.75506e-09
+#Marco: 2 different lines: using parameters of the mean (Xe cut)
+#99 0 4 1.0 7.5277e-06 -3.87502e-06 -7.27222e-09
+99 0 2 1.0 0.
+

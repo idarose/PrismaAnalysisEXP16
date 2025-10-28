@@ -1,0 +1,25 @@
+ind_DE_A    = 0
+ind_DE_B    = 1
+ind_DE_C    = 2
+ind_DE_D    = 3
+ind_DRIFT_A = 4
+ind_DRIFT_B = 5
+ind_DRIFT_C = 6
+
+ic_A_Calibration_file = cal/IC_gain_60_2_8_A_2024_chargeInject.cal
+ic_B_Calibration_file = cal/IC_gain_60_2_8_B_2024_chargeInject.cal
+ic_C_Calibration_file = cal/IC_gain_60_2_8_C_2024_chargeInject.cal
+ic_D_Calibration_file = cal/IC_gain_60_2_8_D_2024_chargeInject.cal
+
+ic_A_Threshold_file = threshold/IC_A.thres
+ic_B_Threshold_file = threshold/IC_B.thres
+ic_C_Threshold_file = threshold/IC_C.thres
+ic_D_Threshold_file = threshold/IC_D.thres
+
+drift_A_Threshold_file = threshold/DRIFT_A.thres
+drift_B_Threshold_file = threshold/DRIFT_B.thres
+drift_C_Threshold_file = threshold/DRIFT_C.thres
+
+threshold_before_cal=1
+veto_threshold = 4000.
+max_veto_id = 10
