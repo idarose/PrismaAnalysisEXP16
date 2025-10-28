@@ -1,0 +1,138 @@
+/Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis
+
+Prisma configuration files:
+/Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis/PrismaConf
+All files *.conf.
+
+Here you will also find folder with bananas: /ban/,
+and calibrations: /cal/.
+
+Generate lists:
+/Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis/Runs/inListFiles
+
+Run the script
+./generateList.sh 233
+
+Makes the file:
+inList_0233.txt
+
+Run analysis code in /Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis:
+
+./RunAnalysis 233 --nrthr 2
+
+Find output in
+/Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis/Out
+
+
+Check calibration in /Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis:
+root -l
+.L CheckCal.C
+DrawAll("Runs/run_0232/Tree_0000.root","Out/sum-232_1.root")
+
+Alll threshold, calibration and bananas are in PrismaConf /cal/, /thresholds/, /ban/
+
+
+Fix mcp banana in RawMCPY vs RawMCPX, save Name "mcp_cut"
+Save as TCut: "mcp_cut.root"
+TCutToBan("mcp_cut.root","mcp_banana.ban")
+copy new banana to /ban/, overwrite old one
+
+
+MCP calibration inside /Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis/MCP
+.L MCP_cal.C
+
+Wix template to have the correct numbers.
+
+Template.dat:
+pos     x_mm  y_mm  x_chan  y_chan
+center  0     0     1500    2500
+tl_cal  -21.5 26.5  2000    3000
+tr_cal  21.5  26.5  1000    3000
+bl_cal  -21.5 -26.5 2000    2000
+br_cal  21.5  -26.5 1000    2000
+
+Remember to switch left and right!
+
+MCP_cal("Template.dat")
+
+Get output:
+
+Minuit2Minimizer: Minimize with max-calls 1000000 convergence for edm < 0.001 strategy 1
+Warning in <Minuit2>: MnPosDef Matrix forced pos-def by adding to diagonal 0.00479908
+Warning in <Minuit2>: MnPosDef Matrix forced pos-def by adding to diagonal 0.00479702
+Warning in <Minuit2>: Minuit2Minimizer::Minimize Covar was made pos def
+Minuit2Minimizer : Valid minimum - status = 1
+FVAL  = 8.57914869424808613e-08
+Edm   = 6.06712064013743779e-08
+Nfcn  = 11402
+x0    = 0.0188997    +/-  0.00154359
+x1    = -5.4258e-08  +/-  0.000389106
+y0    = -3.96931e-07     +/-  0.0132793
+y1    = 0.740146     +/-  0.0258983
+calxa     = 64.4984  +/-  3.3431
+calxb     = -2.27507     +/-  0.185794
+calxc     = -2.04202e-06     +/-  0.00371215
+calya     = -132.5   +/-  2.60777
+calyb     = 0.0716075    +/-  0.00250561
+angle     = 0    (fixed)
+
+Raw / Calibrated / Nominal reference points:
+ 1500.00  2500.00     0.00    0.00     0.00    0.00
+ 2000.00  3000.00   -21.50   26.50   -21.50   26.50
+ 1000.00  3000.00    21.50   26.50    21.50   26.50
+ 2000.00  2000.00   -21.50  -26.50   -21.50  -26.50
+ 1000.00  2000.00    21.50  -26.50    21.50  -26.50
+
+Calibration parameters:
+sum dist sq: 8.57915e-08
+mcp_mix_x_0 = 0.0188997
+mcp_mix_x_1 = -5.4258e-08
+mcp_mix_y_0 = -3.96931e-07
+mcp_mix_y_1 = 0.740146
+cal x: 99 0 3   64.4984 -2.27507    -2.04202e-06
+cal y: 99 0 2   -132.5  0.0716075
+rotation_mcp = 0
+
+Fill inn parameters in /cal/
+
+in all *mc* files.
+
+RunAnalysis needs to be performed again after this.
+
+#
+Random commands
+
+
+DrawMCPraw("Runs/run_0232/Tree_0000.root","PrismaConf/ban/mcp_banana.ban",false,1e6)
+
+
+
+---------------------------------------------------
+
+Running with selector
+
+./RunSelector --conf selectorPrisma.conf --rm_partial --only_enabled_histos --no_user_sel --nrthr 1 243
+
+MCP_cal("/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/Runs/run_0274/Tree_0000.root","new_mask_2.dat","out",1e6,"/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/SelConf/CUT/PRISMA/RAW/MCP/mcp__0__1.root")
+
+
+
+DrawPPAC_raw("Out/sum-274_2.root","/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/SelConf/CALIBRATION/PRISMA/RAW/ppac_tresh.cal")
+
+
+DrawPPAC_ana("Out/sum-274_2.root")
+
+
+DrawToFs("Out/sum-274_2.root","/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/SelConf/CALIBRATION/PRISMA/RAW/tof.cal")
+
+DrawIonchPads("Out/sum-274_2.root","/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/SelConf/CALIBRATION/PRISMA/RAW/ice.cal")
+
+DrawSidePads("Out/sum-274_2.root","/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/SelConf/CALIBRATION/PRISMA/RAW/icsides.cal")
+
+
+./RunSelector --conf selectorPrisma.conf --set_gates Out/sum-274_2.root
+
+
+
+
+
