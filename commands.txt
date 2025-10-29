@@ -111,7 +111,7 @@ DrawMCPraw("Runs/run_0232/Tree_0000.root","PrismaConf/ban/mcp_banana.ban",false,
 
 Running with selector
 
-./RunSelector --conf selectorPrisma.conf --rm_partial --only_enabled_histos --no_user_sel --nrthr 1 243
+./RunSelector --conf selectorPrisma.conf --rm_partial --sum_all --only_enabled_histos --no_user_sel --nrthr 1 234 235
 
 MCP_cal("/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/Runs/run_0274/Tree_0000.root","new_mask_2.dat","out",1e6,"/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/SelConf/CUT/PRISMA/RAW/MCP/mcp__0__1.root")
 
