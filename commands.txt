@@ -113,6 +113,13 @@ Running with selector
 
 ./RunSelector --conf selectorPrisma.conf --rm_partial --sum_all --only_enabled_histos --no_user_sel --nrthr 1 234 235
 
+./RunSelector --conf selectorPrisma.conf --rm_partial --sum_all --only_enabled_histos --no_user_sel --nrthr 8 244
+
+./RunSelector --conf selectorPrisma.conf --rm_partial --sum_all --only_enabled_histos --no_user_sel --nrthr 1 271 272 273 274 275
+
+./RunSelector --conf selectorPrisma.conf --rm_partial --sum_all --only_enabled_histos --no_user_sel --verb 999 --nrthr 1 234
+
+--verb 9999 --nrevts 100
 MCP_cal("/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/Runs/run_0274/Tree_0000.root","new_mask_2.dat","out",1e6,"/Users/idarosenqvist/Desktop/Academics/Codes/PrismaAnalysisEXP16/SelConf/CUT/PRISMA/RAW/MCP/mcp__0__1.root")
 
 
@@ -133,6 +140,12 @@ DrawSidePads("Out/sum-274_2.root","/Users/idarosenqvist/Desktop/Academics/Codes/
 ./RunSelector --conf selectorPrisma.conf --set_gates Out/sum-274_2.root
 
 
+
+
+[+[#2601095] |i,0| TB_AGATA_Tracking::Process(1) : 0x172058040 ]
+ |E,0|
+  Number of tracked hits : 54Max tracked hits = 50 event ignored !
+[-[#2601095] TB_AGATA_Tracking::Process(1) : 0x172058040 ]
 
 
 
